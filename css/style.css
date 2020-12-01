@@ -1,0 +1,32 @@
+html,body{
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    background: #003476;
+    color: #fff;
+    line-height: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    font-size: 1.4em;
+}
+p{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+#black.black{
+    color:rgb(28, 36, 136);
+}
+#black{
+  color:black;  
+} 
+.red{
+    color: red;
+}
+
