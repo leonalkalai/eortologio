@@ -53,6 +53,6 @@ $.ajax(RSS_URL, {
 
       console.log(data)
     
-      });
+    
   }
-
+  });
