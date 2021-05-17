@@ -26,7 +26,7 @@ document.querySelector('body').style.backgroundColor = "orange";
 // })
 
 // Array to store the list of urls to fetch, max 50 urls at one time
-  var arr = ["https://developer.mozilla.org/en-US/docs/Web/API/Request","https://www.giortes.gr/rss/si_el.xml"]
+  var arr = ["https://developer.mozilla.org/en-US/docs/Web/API/Request","https://github.com/leonalkalai/Javascript_Quiz/blob/main/js/questions.json"]
   // Paste the url which you got in step 4
  fetch('https://tiny-grass-88fc.leonalkalai.workers.dev',{
   method: 'POST',
