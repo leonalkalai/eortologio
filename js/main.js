@@ -11,3 +11,16 @@ function giortes(){
     }, 1000);   
 }
 info.innerHTML = giortes()
+
+
+jQuery.ajax({
+  url: "http://www.eortologio.gr/rss/si_el.xml",
+  method: "GET",
+  headers: {
+
+  }
+}).then(response => {
+    console.log(response);
+}).catch(error => {
+    console.log(error);
+})
