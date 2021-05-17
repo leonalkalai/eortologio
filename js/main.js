@@ -42,7 +42,7 @@ $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://ww
     var xml = data.contents,
     xmlDoc = $.parseXML( xml ),
     $xml = $( xmlDoc ),
-    $description = $xml.find( "description" );
+    //$description = $xml.find( "description" );
     $guid = $xml.find( "guid" );
     $('#info').append( $guid.text() );
 
