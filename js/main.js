@@ -36,22 +36,23 @@ document.querySelector('body').style.backgroundColor = "orange";
 // .then(data => console.log(data))
 
 
-// $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.giortes.gr/rss/si_el.xml'), function (data) {
-//   	$('#info').html(data.contents);
-// });
-
-const RSS_URL = `'https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.giortes.gr/rss/si_el.xml'`;
-
-$.ajax(RSS_URL, {
-  accepts: {
-    xml: "application/rss+xml"
-  },
-
-  dataType: "xml",
-
-  success: function(data) {
-      console.log(data)
-  }
+$.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.giortes.gr/rss/si_el.xml'), function (data) {
+  	$('#info').html(data.contents);
+    console.log(data)
 });
+
+// const RSS_URL = `'https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.giortes.gr/rss/si_el.xml'`;
+
+// $.ajax(RSS_URL, {
+//   accepts: {
+//     xml: "application/rss+xml"
+//   },
+
+//   dataType: "xml",
+
+//   success: function(data) {
+//       console.log(data)
+//   }
+// });
 
 
