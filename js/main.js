@@ -36,6 +36,7 @@ document.querySelector('body').style.backgroundColor = "orange";
 // .then(data => console.log(data))
 
 
-$.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.giortes.gr/data/java-leon/simera_kosmikes.json'), function (data) {
-    alert(data.contents);
+// with JQuery
+$.getJSON('http://api.allorigins.win/get?url=http%3A//www.eortologio.gr/rss/si_el.xml&callback=?', function (data) {
+	$('#info').html(data.contents);
 });
