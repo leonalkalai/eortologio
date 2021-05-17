@@ -40,7 +40,7 @@ document.querySelector('body').style.backgroundColor = "orange";
 //   	$('#info').html(data.contents);
 // });
 
-const RSS_URL = 'https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.giortes.gr/rss/si_el.xml'`;
+const RSS_URL = `'https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.giortes.gr/rss/si_el.xml'`;
 
 $.ajax(RSS_URL, {
   accepts: {
@@ -50,9 +50,8 @@ $.ajax(RSS_URL, {
   dataType: "xml",
 
   success: function(data) {
-
       console.log(data)
-    
-    
   }
-  });
+});
+
+
