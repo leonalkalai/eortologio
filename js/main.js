@@ -37,8 +37,13 @@ document.querySelector('body').style.backgroundColor = "orange";
 
 
 $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.giortes.gr/rss/si_el.xml'), function (data) {
-  	$('#info').html(data.contents);
-    console.log(data)
+  	//$('#info').html(data.contents);
+   // console.log(data)
+    var xml = data.contents.html(),
+    xmlDoc = $.parseXML( xml ),
+    $xml = $( xmlDoc ),
+    $title = $xml.find( "guid" );
+  $('#info').html(title);
 });
 
 // const RSS_URL = `'https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.giortes.gr/rss/si_el.xml'`;
