@@ -36,7 +36,8 @@ document.querySelector('body').style.backgroundColor = "orange";
 // .then(data => console.log(data))
 
 
-// with JQuery
-$.getJSON('http://api.allorigins.win/get?url=http%3A//www.eortologio.gr/rss/si_el.xml&callback=?', function (data) {
-	$('#info').html(data.contents);
+$.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.giortes.gr/rss/si_el.xml'), function (data) {
+  	$('#info').html(data.contents);
 });
+
+
