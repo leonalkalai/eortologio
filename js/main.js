@@ -26,11 +26,16 @@ document.querySelector('body').style.backgroundColor = "orange";
 // })
 
 // Array to store the list of urls to fetch, max 50 urls at one time
-  var arr = ["https://developer.mozilla.org/en-US/docs/Web/API/Request","https://leonalkalai.github.io/Javascript_Quiz/js/questions.json"]
-  // Paste the url which you got in step 4
- fetch('https://tiny-grass-88fc.leonalkalai.workers.dev',{
-  method: 'POST',
-  body: JSON.stringify(arr)
-})
-.then(response => response.text())
-.then(data => console.log(data))
+//   var arr = ["https://developer.mozilla.org/en-US/docs/Web/API/Request","https://leonalkalai.github.io/Javascript_Quiz/js/questions.json"]
+//   // Paste the url which you got in step 4
+//  fetch('https://tiny-grass-88fc.leonalkalai.workers.dev',{
+//   method: 'POST',
+//   body: JSON.stringify(arr)
+// })
+// .then(response => response.text())
+// .then(data => console.log(data))
+
+
+$.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.giortes.gr/data/java-leon/simera_kosmikes.json'), function (data) {
+    alert(data.contents);
+});
