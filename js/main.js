@@ -30,7 +30,7 @@ document.querySelector('body').style.backgroundColor = "orange";
   // Paste the url which you got in step 4
  fetch('https://tiny-grass-88fc.leonalkalai.workers.dev',{
   method: 'POST',
-  //body: JSON.stringify(arr)
+  body: JSON.stringify(arr)
 })
 .then(response => response.text())
 .then(data => console.log(data))
