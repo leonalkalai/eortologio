@@ -30,7 +30,7 @@ $.getJSON('https://www.eortologio.net/rss/today.xml'), function (data) {
     `
     );
 
-
+});
 
 /*-----------------------------------------------------------------------*/
 
