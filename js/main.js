@@ -16,7 +16,9 @@ document.querySelector('body').style.backgroundColor = "orange";
 
 //eortologio.net
 
-$.getJSON('https://www.eortologio.net/rss/today.xml'), function (data) {
+$.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.eortologio.net/rss/today.xml'), function (data) {
+  	//$('#info').html(data.contents);
+   // console.log(data)
     var xml = data.contents,
     xmlDoc = $.parseXML( xml ),
     $xml = $( xmlDoc ),
@@ -30,7 +32,8 @@ $.getJSON('https://www.eortologio.net/rss/today.xml'), function (data) {
     `
     );
 
-};
+});
+
 
 /*-----------------------------------------------------------------------*/
 
