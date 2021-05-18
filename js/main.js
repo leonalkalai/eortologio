@@ -24,11 +24,13 @@ $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://ww
     $xml = $( xmlDoc ),
     $author = $xml.find( "author" ),  
     $description = $xml.find( "description" ),
-    $guid = $xml.find( "guid" );
+    $pubDate = $xml.find( "pubDate" ),
+    $title = $xml.find( "title" ) ;  
     $('#info').append(`
       ${$author.text()} <br>
-      ${$guid.text()} <br>
-      ${$description.text()}
+      ${$pubDate.text()} <br>
+      ${$description.text()} <br>
+      ${$title.text()} <br>
     `
     );
 
