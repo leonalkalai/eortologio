@@ -14,6 +14,26 @@ document.querySelector('body').style.backgroundColor = "orange";
 
 
 
+//eortologio.net
+
+$.getJSON('https://www.eortologio.net/rss/today.xml'), function (data) {
+    var xml = data.contents,
+    xmlDoc = $.parseXML( xml ),
+    $xml = $( xmlDoc ),
+    $author = $xml.find( "author" ),  
+    $description = $xml.find( "description" ),
+    $guid = $xml.find( "guid" );
+    $('#info').append(`
+      ${$author.text()} <br>
+      ${$guid.text()} <br>
+      ${$description.text()}
+    `
+    );
+
+
+
+/*-----------------------------------------------------------------------*/
+
 // $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://www.giortes.gr/rss/si_el.xml'), function (data) {
 //   	//$('#info').html(data.contents);
 //    // console.log(data)
@@ -31,17 +51,18 @@ document.querySelector('body').style.backgroundColor = "orange";
 //     );
 
 // });
-
-fetch('https://tiny-grass-88fc.leonalkalai.workers.dev').then(function (response) {
-	if (response.ok) {
-		return response.json();
-	};
-	return Promise.reject(response);
-}).then(function (data) {
-	console.log(data);
-}).catch(function (error) {
-	console.warn(error);
-});
+/*-----------------------------------------------------------------------*/
+//with proxy
+// fetch('https://tiny-grass-88fc.leonalkalai.workers.dev').then(function (response) {
+// 	if (response.ok) {
+// 		return response.json();
+// 	};
+// 	return Promise.reject(response);
+// }).then(function (data) {
+// 	console.log(data);
+// }).catch(function (error) {
+// 	console.warn(error);
+// });
 
 
 
