@@ -84,7 +84,7 @@ imghtml.each(function (i) {
         $('#content ul').append(`
             <li class="saintimage">
             <p>${myarray[i]}</p>
-                <a href="${`(saintsrc.charAt( 0 ) == '/' )?saintsrc.slice(1):saintsrc}" target="_blank"><img src="${(saintsrc.charAt( 0 ) == '/' )?saintsrc.slice(1):saintsrc`}" /></a>
+                <a href="${`(saintsrc.charAt( 0 ) == '/' )?saintsrc.slice(1):saintsrc`}" target="_blank"><img src="${`(saintsrc.charAt( 0 ) == '/' )?saintsrc.slice(1):saintsrc`}" /></a>
             </li>
        `)
 
