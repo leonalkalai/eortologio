@@ -6,6 +6,8 @@ body{
     text-align: center;
     padding: 0;
     margin: 0;
+    background: #fafafa;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%), 0 0 300px 25px rgb(222 198 122 / 70%) inset;
 }
 h1{
     background: #003476;
@@ -16,9 +18,23 @@ h1{
     margin: 0;
     font-size: 1.4em;
 }
+a{
+    display: block;
+}
+ul > li{
+ display: block;
+ list-style: none;
+}
+img{
+    vertical-align: middle;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
 p{
-    text-transform: uppercase;
-    text-decoration: underline;
+    text-decoration: none;
 }
 #black.black{
     color:rgb(28, 36, 136);
@@ -29,4 +45,3 @@ p{
 .red{
     color: red;
 }
-
